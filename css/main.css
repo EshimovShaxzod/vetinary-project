@@ -338,7 +338,7 @@ a {
 /* CONTAINER START */
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1328px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -353,4 +353,239 @@ a {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* HEADER STYLE START */
+.site-header {
+  font-family: "DM Sans", sans-serif;
+}
+.site-header__wrapper-start {
+  display: flex;
+  justify-content: flex-end;
+  padding: 14px 0 10px 0;
+}
+.site-header__adress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1117px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.site-header__adress {
+  position: relative;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 23px;
+  transition: 0.2s;
+}
+.site-header__adress:hover {
+  color: #FFBD54;
+}
+.site-header__adress:active {
+  opacity: 0.6;
+}
+.site-header__adress::before {
+  position: absolute;
+  content: url("../assets/logo/home-logo.svg");
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 13px;
+}
+.site-header__cell-list {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.site-header__cell-link {
+  position: relative;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.2s;
+}
+.site-header__cell-link:hover {
+  color: #FFBD54;
+}
+.site-header__cell-link:active {
+  opacity: 0.6;
+}
+.site-header__cell-item {
+  position: relative;
+}
+.site-header__cell-link:first-child {
+  padding-left: 23px;
+}
+.site-header__cell-item:first-child::before {
+  position: absolute;
+  content: url("../assets/logo/phone-logo.svg");
+}
+.site-header__cell-item:nth-child(2)::before {
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  content: url("../assets/logo/ellipse.svg");
+}
+.site-header__cell-item:last-child::before {
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  content: url("../assets/logo/ellipse.svg");
+}
+.site-header__data {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.site-header__data:hover a {
+  color: #FFBD54;
+}
+.site-header__data:active a {
+  opacity: 0.6;
+}
+.site-header__data-link {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.2s;
+}
+.site-header__data-item {
+  position: relative;
+}
+.site-header__data-item:first-child::before {
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  width: 14px;
+  height: 14px;
+  content: url("../assets/logo/schedule.svg");
+}
+.site-header__wrapper-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #F3F3F3;
+  width: 100%;
+}
+.site-header__logo {
+  margin-right: 115px;
+}
+.site-header__logo-img {
+  position: absolute;
+  top: 23px;
+}
+.site-header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+.site-header__nav-item {
+  position: relative;
+}
+.site-header__nav-item:first-child::before {
+  position: absolute;
+  content: url("../assets/logo/fish-logo.svg");
+  left: -30px;
+  top: -2px;
+}
+.site-header__nav-link {
+  position: relative;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2;
+}
+.site-header__nav-link:hover::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background-color: #ffca74;
+  width: 100%;
+  height: 7px;
+  opacity: 0.4;
+  z-index: -1;
+}
+.site-header__nav-link:active {
+  opacity: 0.6;
+}
+.site-header__ask-link {
+  position: relative;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+.site-header__ask-link:hover::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background-color: #ffca74;
+  width: 100%;
+  height: 7px;
+  opacity: 0.4;
+  z-index: -1;
+}
+.site-header__ask-link:active {
+  opacity: 0.6;
+}
+.site-header__ask-link::before {
+  position: absolute;
+  content: url("../assets/logo/pet.svg");
+  left: -35px;
+  top: -4px;
+}
+.site-header__menu {
+  display: none;
+}
+
+/* HEADER RESPONSIVE STYLE START */
+@media only screen and (max-width: 1296px) {
+  .site-header__logo-img {
+    top: 35px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .site-header__logo {
+    margin-right: 150px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .site-header__wrapper-start {
+    display: none;
+  }
+  .site-header__wrapper-end {
+    padding: 15px 0;
+  }
+  .site-header__nav {
+    display: none;
+  }
+  .site-header__ask-link {
+    display: none;
+  }
+  .site-header__menu {
+    display: block;
+    font-size: 30px;
+  }
+  .site-header__logo {
+    position: relative;
+    margin: 0;
+  }
+  .site-header__logo-img {
+    position: relative;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .site-header__logo-img {
+    width: 150px;
+  }
+}
+/* HEADER RESPONSIVE STYLE END */
+/* HEADER STYLE END *//*# sourceMappingURL=main.css.map */
