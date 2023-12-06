@@ -1,0 +1,287 @@
+/* HEADER STYLE START */
+.site-header{
+    font-family: $fontFamily;
+    
+    &__wrapper-start{
+        display: flex;
+        justify-content: flex-end;
+        padding: 14px 0 10px 0;
+    }
+    
+    &__adress-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1117px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    }
+    
+    &__adress{
+        position: relative;
+        @include adress-text;
+        padding-left: 23px;
+        transition: .2s;
+        
+        &:hover{
+            color: #FFBD54;
+        }
+        
+        &:active{
+            opacity: .6;
+        }
+    }
+    
+    &__adress::before{
+        position: absolute;
+        content: url('../assets/logo/home-logo.svg');
+        top: 0;
+        left: 0;
+        width: 14px;
+        height: 13px;
+    }
+    
+    &__cell-list{
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+    
+    &__cell-link{
+        position: relative;
+        @include adress-text;
+        transition: .2s;
+        
+        &:hover{
+            color: #FFBD54;
+        }
+        
+        &:active{
+            opacity: .6;
+        }
+    }
+    
+    &__cell-item{
+        position: relative;
+    }
+    
+    &__cell-link:first-child{
+        padding-left: 23px;
+    }
+    
+    &__cell-item:first-child::before{
+        position: absolute;
+        content: url('../assets/logo/phone-logo.svg');
+    }
+    
+    &__cell-item:nth-child(2)::before{
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        content: url('../assets/logo/ellipse.svg');
+    }
+    
+    &__cell-item:last-child::before{
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        content: url('../assets/logo/ellipse.svg');
+    }
+    
+    &__data{
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        
+        &:hover a{
+            color: #FFBD54;
+        }
+        
+        &:active a{
+            opacity: .6;
+        }
+        
+        &-link{
+            @include adress-text;
+            transition: .2s;
+        }
+        
+        &-item{
+            position: relative;
+        }
+        
+        &-item:first-child::before{
+            position: absolute;
+            top: 3px;
+            left: -20px;
+            width: 14px;
+            height: 14px;
+            content: url('../assets/logo/schedule.svg');
+        }
+        
+    }
+    
+    &__wrapper-end{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-top:1px solid #F3F3F3;
+        background-color: $backgroundPrimary;
+    }
+    
+    &__logo{
+        margin-right: 115px;
+    }
+    &__logo-img{
+        position: absolute;
+        top:23px;
+    }
+    
+    &__nav{
+        &-list{
+            display: flex;
+            align-items: center;
+            gap: 55px;
+        }
+        
+        &-item{
+            position: relative;
+        }
+        
+        &-item:first-child::before{
+            position: absolute;
+            content: url('../assets/logo/fish-logo.svg');
+            left: -30px;
+            top: -2px;
+        }
+        
+        &-link{
+            position: relative;
+            color: $colorPrimary;
+            font-size: 16px;
+            font-weight: 500;
+            transition: .2;
+            
+            &:hover::before{
+                position: absolute;
+                content:'';
+                bottom: 0;
+                left: 0;
+                background-color: #ffca74;
+                width: 100%;
+                height: 7px;
+                opacity: .4;
+                z-index: -1;
+            }
+            
+            &:active{
+                opacity: .6;
+            }
+        }
+    }
+    
+    &__ask-link{
+        position: relative;
+        color: $colorPrimary;
+        font-size: 16px;
+        font-weight: 500;
+        
+        &:hover::after{
+            position: absolute;
+            content:'';
+            bottom: 0;
+            left: 0;
+            background-color: #ffca74;
+            width: 100%;
+            height: 7px;
+            opacity: .4;
+            z-index: -1;
+        }
+        
+        
+        &:active{
+            opacity: .6;
+        }
+        
+        &::before{
+            position: absolute;
+            content: url('../assets/logo/pet.svg');
+            left: -35px;
+            top: -4px;
+        }
+    }
+    
+    &__menu{
+        display: none;
+    }
+} 
+
+/* HEADER RESPONSIVE STYLE START */ 
+
+@media only screen and (max-width:1296px){
+    .site-header{
+        &__logo-img{
+            top: 35px;
+        }
+    }
+}
+
+@media only screen and (max-width:1180px){
+    .site-header{
+        &__logo{
+            margin-right: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width:1140px){
+    .site-header{
+        &__wrapper-start{
+            display: none;
+        }
+
+        &__wrapper-end{
+            padding: 15px 0;
+        }
+        
+        &__nav{
+            display: none;
+        }
+        
+        &__ask-link{
+            display: none;
+        }
+        
+        &__menu{
+            display: block;
+            font-size: 30px;
+        }
+        
+        &__logo{
+            position: relative;
+            margin: 0;
+            
+            &-img{
+                position: relative;
+                top: 0;
+            }
+            
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 576px){
+   .site-header{
+
+     &__logo-img{
+        width: 150px;
+     }
+
+   }
+
+}
+/* HEADER RESPONSIVE STYLE END */ 
+
+/* HEADER STYLE END */ 
