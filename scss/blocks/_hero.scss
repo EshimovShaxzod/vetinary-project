@@ -48,6 +48,15 @@
             background: $btnPrimary;
             border: none;
             cursor: pointer;
+            transition: .3s;
+            
+            &:hover{
+                background-color: #333333cc; 
+            }
+            
+            &:active{
+                background: #33333399
+            }
         }
     }
 }
@@ -91,10 +100,10 @@
         background-size: auto;
         background-position: calc(50%) 10px;
         font-family: 'Future PTS', 'sans-serif';
-
+        
         &-content{
             margin-top: 280px;
-
+            
             &__title{
                 font-size: 50px;
                 line-height: 50px;
