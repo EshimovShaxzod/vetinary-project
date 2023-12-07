@@ -1,0 +1,197 @@
+/*  FOOTER STYLE START */
+.site-footer{
+    padding-top: 61px;
+    padding-bottom: 23px;
+    border: 1px solid #EBEBEB;
+    background-color: #F3F3F3;
+    font-family: $fontFamily;
+    
+    &__wrapper{
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1.8fr 2fr;
+        margin-bottom: 28px;
+    }
+
+    &__all-link{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 120px;
+    }
+
+    &__all-adress{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__item{
+        margin-bottom: 14px;
+    }
+    
+    &__link{
+        color: $colorPrimary;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        transition: .5;
+        
+        &:hover{
+            color: #FFBD54;
+            opacity: .8;
+        }
+        
+        &:active{
+            opacity: .6;
+        }
+    }
+    
+    &__time{
+        position: relative;
+        display: inline-block;
+        height: 60px;
+        color:$colorPrimary;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        transition: .7;
+        cursor: pointer;
+        
+        &::before{
+            position: absolute;
+            top: 4px;
+            left: -20px;
+            content: url('../assets/logo/schedule.svg');
+        }
+        
+        &:hover{
+            color: #FFBD54;
+            opacity: .8;
+        }
+        
+        &:active{
+            opacity: .6;
+        }
+    }
+    
+    &__adress{
+        position: relative;
+
+        &-link{
+            padding-left: 30px;
+            color:$colorPrimary;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            
+            &:hover{
+                color: #FFBD54;
+                opacity: .8;
+            }
+            
+            &:active{
+                opacity: .6;
+            }
+            
+        }
+        
+        &::before{
+            position: absolute;
+            content: url('../assets/logo/home-logo.svg');
+        }
+    }
+    
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        
+        &-link{
+            margin-bottom: 4px;
+            color: $colorPrimary;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            
+            &:hover{
+                color: #FFBD54;
+                opacity: .8;
+            }
+            
+            &:active{
+                opacity: .6;
+            }
+        }
+    }
+    
+    &__reserved{
+        text-align: right;
+        color: #5C5C5C;
+        font-size: 14px;       
+    }
+} 
+
+@media only screen and (max-width:1160px){
+
+    .site-footer{
+
+        &__wrapper{
+            grid-template-columns: 1.2fr 1fr;
+        }
+    }
+}
+
+@media only screen and (max-width:1000px){
+
+    .site-footer{
+
+        &__wrapper{
+            grid-template-columns:1fr;
+        }
+
+        &__all-link{
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+
+        &__all-adress{
+            padding: 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width:576px){
+    .site-footer{
+        
+        &__all-link{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__all-adress{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__link{
+            margin-bottom: 30px;
+        }
+
+        &__time{
+            margin-bottom: 25px;
+        }
+
+        &__adress{
+            margin-bottom: 25px;
+        }
+
+        &__reserved{
+            text-align: center;
+        }
+    }
+}
+
+/*  FOOTER STYLE END */ 
