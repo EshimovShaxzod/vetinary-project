@@ -48,6 +48,15 @@
             background: $btnPrimary;
             border: none;
             cursor: pointer;
+
+            &:hover{
+                background-color: #333333cc; 
+            }
+            
+            &:active{
+                background: #33333399
+            }
+            
         }
     }
 }
