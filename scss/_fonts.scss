@@ -1,9 +1,27 @@
 /* abeezee-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Future PT', 'sans-serif';
+    font-family: 'Future PT';
     font-style: normal;
-    font-weight: 500;
-    src: url('../assets/fonts/futura\ medium\ bt.ttf') format('bt.ttf'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-weight: 400;
+    src: url('../assets/fonts/FuturaPT-Light.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+
+  /* abeezee-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Future PT';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/FuturaPT-Medium.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* abeezee-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Future PT';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/FuturaPT-Bold.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
   

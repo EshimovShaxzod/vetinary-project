@@ -24,7 +24,6 @@
         &__item:first-child{
             width: 100%;
             max-width: 305px;
-            padding-bottom: 37px;
             border-radius: 5px;
             border: 1px solid #E4E4E2;
             background-color: #fff;
@@ -64,13 +63,12 @@
             color: $colorSecondary;
             font-size: 16px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 20px;
         }
         
         &__link{
             position: relative;
             display: inline-block;
-            bottom: -30px;
             color: $colorPrimary;
             font-size: 16px;
             font-weight: 500;
@@ -102,9 +100,7 @@
         }
         
         
-        &__link1{
-            bottom: 0px;
-        }
+        
         
         &__item:nth-child(2){
             width: 100%;
@@ -118,8 +114,7 @@
         &__content{
             margin-left: 31px;
             padding-top: 42px;
-            padding-right: 25px;
-            margin-bottom: 38px;
+            padding-right: 14px;
             
             &-link{
                 display: inline-block;
@@ -135,7 +130,7 @@
             }
             
             &-time{
-                margin-left: 40px;
+                margin-left: 30px;
                 color: $colorSecondary;
                 font-size: 14px;
                 font-weight: 500;
@@ -156,14 +151,14 @@
                 color: $colorSecondary;
                 font-size: 16px;
                 font-weight: 400;
-                line-height: 24px;
+                line-height: 14px;
+                line-height: 20px;
             }
         }
         
         &__item:last-child{
             width: 100%;
             max-width: 305px;
-            padding-bottom: 37px;
             border-radius: 5px;
             border: 1px solid #E4E4E2;
             background-color: #fff;
@@ -184,10 +179,16 @@
 
            &__item:first-child{
             max-width: 400px;
+            padding-bottom: 37px;
            }
 
            &__item:last-child{
             max-width: 400px;
+            padding-bottom: 37px;
+           }
+
+           &__content-desc{
+            margin-bottom: 86px;
            }
 
            &__img{
@@ -210,6 +211,14 @@
            
            & li{
              margin: 0 auto;
+           }
+
+           &__content{
+            padding-bottom: 37px;
+           }
+
+           &__content-desc{
+            margin-bottom: 36px;
            }
         }
     }
