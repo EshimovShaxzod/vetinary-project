@@ -158,6 +158,10 @@
         &__all-adress{
             padding: 0 40px;
         }
+
+        &__list{
+            margin-right: 40px;
+        }
     }
 }
 
@@ -174,6 +178,10 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+        }
+
+        &__list{
+            margin-right: 0px;
         }
 
         &__link{

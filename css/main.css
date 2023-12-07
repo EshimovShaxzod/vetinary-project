@@ -1096,10 +1096,10 @@ a {
 @media only screen and (max-width: 550px) {
   .informed {
     margin-bottom: 50px;
-    padding-left: 40px;
   }
   .informed-content__title {
     line-height: 60px;
+    padding-left: 40px;
   }
   .informed-content__form {
     flex-direction: column;
@@ -1574,6 +1574,9 @@ a {
   .site-footer__all-adress {
     padding: 0 40px;
   }
+  .site-footer__list {
+    margin-right: 40px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .site-footer__all-link {
@@ -1585,6 +1588,9 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .site-footer__list {
+    margin-right: 0px;
   }
   .site-footer__link {
     margin-bottom: 30px;
