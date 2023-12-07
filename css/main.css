@@ -308,6 +308,14 @@ template {
   display: none;
 }
 
+/* abeezee-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Future PT", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/futura medium bt.ttf") format("bt.ttf"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /*# sourceMappingURL=main.css.map */
 * {
   box-sizing: border-box;
@@ -323,6 +331,8 @@ html {
 
 main {
   flex-grow: 1;
+  background-image: url("../assets/images/bg.png");
+  background-position: 100% 10px;
 }
 
 ol,
@@ -357,7 +367,7 @@ a {
 
 /* HEADER STYLE START */
 .site-header {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 .site-header__wrapper-start {
   display: flex;
@@ -471,7 +481,6 @@ a {
   justify-content: space-between;
   padding: 20px 0;
   border-top: 1px solid #F3F3F3;
-  width: 100%;
 }
 .site-header__logo {
   margin-right: 115px;
@@ -588,4 +597,96 @@ a {
   }
 }
 /* HEADER RESPONSIVE STYLE END */
-/* HEADER STYLE END *//*# sourceMappingURL=main.css.map */
+/* HEADER STYLE END */
+/* HERO STYLE START */
+.hero {
+  width: 100%;
+  padding-top: 105px;
+  padding-bottom: 238px;
+  background-image: url("../assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 90px) -180px;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-content {
+  width: 100%;
+  max-width: 608px;
+  font-family: "Barlow", sans-serif;
+}
+.hero-content__title {
+  margin-bottom: 29px;
+  color: #333;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 64px;
+}
+.hero-content__title span {
+  color: #78C0DE;
+}
+.hero-content__desc {
+  max-width: 480px;
+  margin-bottom: 38px;
+  color: #949494;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.hero-content__btn {
+  padding: 15px 48px 16px 47px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3px;
+  background: #333;
+  border: none;
+  cursor: pointer;
+}
+
+/* HERO RESPONSIVE START */
+@media only screen and (max-width: 1140px) {
+  .hero {
+    background-image: url("../assets/images/bird.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 300px) 120px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .hero {
+    background-image: url("../assets/images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% - 45px) -70px;
+  }
+  .hero-wrapper {
+    justify-content: center;
+  }
+  .hero-content {
+    margin-top: 200px;
+    text-align: center;
+  }
+  .hero-content__desc {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding-bottom: 100px;
+    background-image: url("../assets/images/bird.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 10px;
+    font-family: "Future PTS", "sans-serif";
+  }
+  .hero-content {
+    margin-top: 280px;
+  }
+  .hero-content__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+/* HERO RESPONSIVE END */
+/* HERO STYLE END *//*# sourceMappingURL=main.css.map */

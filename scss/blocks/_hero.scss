@@ -1,0 +1,107 @@
+/* HERO STYLE START */ 
+.hero{
+    width: 100%;
+    padding-top: 105px;
+    padding-bottom: 238px;
+    background-image: url('../assets/images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: calc(50% - 90px) -180px;
+    
+    &-wrapper{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    &-content{
+        width: 100%;
+        max-width: 608px;
+        // float: right;
+        font-family: $fontFamily;
+        
+        &__title{
+            margin-bottom: 29px;
+            color: $colorPrimary;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 64px;
+            
+            & span{
+                color: #78C0DE; 
+            }
+        }
+        
+        &__desc{
+            max-width: 480px;
+            margin-bottom: 38px;
+            color: $colorSecondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+        
+        &__btn{
+            padding: 15px 48px 16px 47px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 3px;
+            background: $btnPrimary;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+/* HERO RESPONSIVE START */ 
+@media only screen and (max-width:1140px){
+    .hero{
+        background-image: url('../assets/images/bird.png');
+        background-repeat: no-repeat;
+        background-position: calc(50% - 300px ) 120px;
+    }
+}
+
+@media only screen and (max-width:940px){
+    .hero{
+        background-image: url('../assets/images/hero-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50% - 45px) -70px;
+        
+        &-wrapper{
+            justify-content: center;
+        }
+        
+        &-content{
+            margin-top: 200px;
+            text-align: center;
+            
+            &__desc{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .hero{
+        padding-bottom: 100px;
+        background-image: url('../assets/images/bird.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: calc(50%) 10px;
+        font-family: 'Future PTS', 'sans-serif';
+
+        &-content{
+            margin-top: 280px;
+
+            &__title{
+                font-size: 50px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+/* HERO RESPONSIVE END */ 
+/* HERO STYLE END */ 
