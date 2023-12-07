@@ -1241,6 +1241,10 @@ a {
   border: 1px solid #E4E4E2;
   background-color: #fff;
 }
+.useful-img {
+  width: 305px;
+  height: 100%;
+}
 
 @media only screen and (max-width: 1328px) {
   .useful-list {
@@ -1273,10 +1277,124 @@ a {
     flex-direction: column;
     max-width: 400px;
   }
+  .useful-img {
+    width: 100%;
+    max-width: 405px;
+  }
 }
 @media only screen and (max-width: 440px) {
   .useful-title {
     line-height: 44px;
   }
 }
-/* USEFUL STYLE END *//*# sourceMappingURL=main.css.map */
+/* USEFUL STYLE END */
+/* CONTACT STYLE START */
+.contact {
+  margin-bottom: 247px;
+  font-family: "Catamaran", sans-serif;
+}
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.contact-maps {
+  height: 700px !important;
+}
+.contact-content {
+  background-image: url("../assets/images/feedback-bg.png");
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 166px;
+  padding-top: 62px;
+  padding-bottom: 74px;
+}
+.contact-form__title {
+  margin-bottom: 14px;
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+}
+.contact-form__desc {
+  margin-bottom: 29px;
+  color: #949494;
+  font-size: 16px;
+  line-height: 20px;
+}
+.contact-form__input {
+  width: 100%;
+  max-width: 375px;
+  margin-bottom: 14px;
+  padding: 16px 0 13px 22px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.contact-form__input:focus {
+  outline: none;
+}
+.contact-form__input::-moz-placeholder {
+  color: #949494;
+}
+.contact-form__input:-ms-input-placeholder {
+  color: #949494;
+}
+.contact-form__input::placeholder {
+  color: #949494;
+}
+.contact-form__textarea {
+  padding-right: 70px;
+}
+.contact-form__btn {
+  padding: 15px 49px 14px 50px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #FFBD54;
+  border: none;
+  cursor: pointer;
+}
+.contact-form__btn:active {
+  opacity: 0.6;
+}
+
+/* CONTACT RESPONSIVE STYLE START */
+@media only screen and (max-width: 1018px) {
+  .contact-content {
+    background-position: calc(50% + 120px);
+  }
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-form {
+    margin-left: 0;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .contact-form__title {
+    padding: 0 20px;
+    font-size: 36px;
+  }
+  .contact-form__desc {
+    padding: 0 34px;
+  }
+  .contact-form__input {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contact {
+    margin-bottom: 0;
+  }
+  .contact-content {
+    background-image: none;
+  }
+}
+/* CONTACT RESPONSIVE STYLE END */
+/* CONTACT STYLE END *//*# sourceMappingURL=main.css.map */

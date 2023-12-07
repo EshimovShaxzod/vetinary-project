@@ -169,6 +169,11 @@
             background-color: #fff;
         }
     }
+
+    &-img{
+        width: 305px;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width:1328px){
@@ -220,6 +225,12 @@
                 max-width: 400px;
             }
         }
+
+        &-img{
+            width: 100%;
+            max-width: 405px;
+        }
+        
     }
 }
 
