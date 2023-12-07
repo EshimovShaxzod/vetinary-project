@@ -885,4 +885,97 @@ a {
   }
 }
 /* SERVICES RESPONSIVE STYLE END */
-/* SERVICES STYLE END *//*# sourceMappingURL=main.css.map */
+/* SERVICES STYLE END */
+/* INSPECTION STYLE START */
+.inspection {
+  margin-bottom: 127px;
+  font-family: "Barlow", sans-serif;
+}
+.inspection-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.inspection-img {
+  width: 100%;
+  max-width: 590px;
+  height: auto;
+  border-radius: 5px;
+}
+.inspection-content {
+  width: 100%;
+  max-width: 492px;
+  margin-top: 33px;
+  margin-left: 48px;
+}
+.inspection-content__title {
+  margin-bottom: 18px;
+  color: #333;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.inspection-content__desc {
+  margin-bottom: 9px;
+  color: #949494;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.inspection-content__btns {
+  display: flex;
+  align-items: center;
+}
+.inspection-content__btn {
+  margin-top: 34px;
+  padding: 14px 36px 15px 35px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+.inspection-content__money {
+  display: flex;
+  align-items: center;
+  margin-right: 21px;
+  border-radius: 3px;
+  border: none;
+  background-color: #FFBD54;
+}
+.inspection-content__money:hover {
+  background-color: rgba(255, 189, 84, 0.8);
+}
+.inspection-content__money:active {
+  background-color: rgba(255, 189, 84, 0.6);
+}
+.inspection-content__document {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #333333;
+}
+.inspection-content__document:hover {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+.inspection-content__document:active {
+  background-color: rgba(51, 51, 51, 0.6);
+}
+
+@media only screen and (max-width: 1024px) {
+  .inspection-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inspection-img {
+    order: 1;
+  }
+  .inspection-content {
+    margin-left: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .inspection-content__btns {
+    justify-content: center;
+  }
+}
+/* INSPECTION STYLE END *//*# sourceMappingURL=main.css.map */
