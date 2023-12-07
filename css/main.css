@@ -651,6 +651,7 @@ a {
     background-image: url("../assets/images/bird.png");
     background-repeat: no-repeat;
     background-position: calc(50% - 300px) 120px;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (max-width: 940px) {
@@ -689,4 +690,91 @@ a {
   }
 }
 /* HERO RESPONSIVE END */
-/* HERO STYLE END *//*# sourceMappingURL=main.css.map */
+/* HERO STYLE END */
+/* ARTICLE STYLE START */
+.site-article {
+  margin-bottom: 191px;
+  margin-top: 70px;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+}
+.site-article__text {
+  position: relative;
+  max-width: 753px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  padding-top: 43px;
+  color: #949494;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.site-article__text::before {
+  position: absolute;
+  top: 0;
+  left: -75px;
+  content: url("../assets/images/quote-1.png");
+}
+.site-article__text::after {
+  position: absolute;
+  bottom: 0;
+  right: -75px;
+  content: url("../assets/images/quote-2.png");
+}
+.site-article__link {
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+.site-article__block {
+  display: inline-block;
+  width: 140px;
+  height: 1px;
+  background-color: #DBDBDB;
+}
+.site-article__block-two {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+/* ARTICLE RESPONSIVE STYLE START */
+@media only screen and (max-width: 938px) {
+  .site-article__text {
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .site-article__text {
+    max-width: 500px;
+  }
+  .site-article__text::before {
+    left: -30px;
+  }
+  .site-article__text::after {
+    right: -40px;
+  }
+}
+@media only screen and (max-width: 618px) {
+  .site-article {
+    margin-top: 0;
+  }
+  .site-article__text {
+    max-width: 420px;
+  }
+  .site-article__text::before {
+    left: -50px;
+  }
+}
+@media only screen and (max-width: 554px) {
+  .site-article__text::before {
+    content: "";
+  }
+  .site-article__text::after {
+    content: "";
+  }
+}
+/* ARTICLE RESPONSIVE STYLE END */
+/* ARTICLE STYLE END *//*# sourceMappingURL=main.css.map */

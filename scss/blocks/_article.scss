@@ -1,0 +1,114 @@
+/* ARTICLE STYLE START */ 
+.site-article{
+    margin-bottom: 191px;
+    margin-top: 70px;
+    font-family: $fontFamily;
+    text-align: center;
+    
+    &__text{
+        position: relative;
+        max-width: 753px;
+        margin: 0 auto;
+        padding-bottom: 35px;
+        padding-top: 43px;
+        color: $colorSecondary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+
+        &::before{
+            position: absolute;
+            top: 0;
+            left: -75px;
+            content: url('../assets/images/quote-1.png');
+        }
+
+        &::after{
+            position: absolute;
+            bottom: 0;
+            right: -75px;
+            content: url('../assets/images/quote-2.png');
+        }
+    }
+    
+    &__link{
+        color: $colorPrimary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    &__block{
+        display: inline-block;
+        width: 140px;
+        height: 1px;
+        background-color: #DBDBDB; 
+
+        &-two{
+            display:block;
+            margin: 0 auto;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+/* ARTICLE RESPONSIVE STYLE START */ 
+@media only screen and (max-width:938px){
+    .site-article{
+
+        &__text{
+            max-width: 600px;
+        }
+    }
+}
+
+@media only screen and (max-width:780px){
+    .site-article{
+
+        &__text{
+            max-width: 500px;
+
+            &::before{
+                left: -30px;
+            }
+
+            &::after{
+                right: -40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:618px){
+    .site-article{
+        margin-top: 0;
+
+        &__text{
+            max-width: 420px;
+
+            &::before{
+                left: -50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:554px){
+    .site-article{
+
+        &__text{
+
+            &::before{
+                content: '';
+            }
+
+            &::after{
+                content: '';
+            }
+        }
+    }
+}
+/* ARTICLE RESPONSIVE STYLE END */ 
+
+/* ARTICLE STYLE END */ 
