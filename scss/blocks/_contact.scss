@@ -1,0 +1,135 @@
+/* CONTACT STYLE START */ 
+.contact{
+    margin-bottom: 247px;
+    font-family: $fontFamily;
+    
+    &-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    
+    &-maps{
+        height: 700px !important;
+    }
+    
+    &-content{
+        background-image: url('../assets/images/feedback-bg.png');
+        background-repeat: no-repeat;
+        background-color: #000;
+    }
+    
+    &-form{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 166px;
+        padding-top: 62px;
+        padding-bottom: 74px;
+        
+        &__title{
+            margin-bottom: 14px;
+            color: #FFF;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        
+        &__desc{
+            margin-bottom: 29px;
+            color: $colorSecondary;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        
+        
+        &__input{
+            width: 100%;
+            max-width: 375px;
+            margin-bottom: 14px;
+            padding: 16px 0 13px 22px;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:focus{
+                outline: none;
+            }
+            
+            &::placeholder{
+                color: #949494;
+            }
+        }
+        
+        &__textarea{
+            padding-right: 70px;
+        }
+        
+        &__btn{
+            padding: 15px 49px 14px 50px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            background-color: #FFBD54;
+            border: none;
+            cursor: pointer;
+            
+            &:active{
+                opacity: .6;
+            }
+        }
+    }
+    
+}
+
+/* CONTACT RESPONSIVE STYLE START */ 
+@media only screen and (max-width:1018px){
+    .contact{
+        
+        &-content{
+            background-position: calc(50% + 120px);
+        }
+        
+        &-wrapper{
+            grid-template-columns: 1fr;
+        }
+        
+        &-form{
+            margin-left: 0;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width:424px){
+    .contact{
+        
+        &-form{
+            
+            &__title{
+                padding: 0 20px;
+                font-size: 36px;
+            }
+            
+            &__desc{
+                padding: 0 34px;
+            }
+            
+            &__input{
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px){
+    .contact{
+        margin-bottom: 0;
+
+        &-content{
+            background-image: none;
+        }
+    }
+}
+/* CONTACT RESPONSIVE STYLE END */ 
+
+/* CONTACT STYLE END */ 
